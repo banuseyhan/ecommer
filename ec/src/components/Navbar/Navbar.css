@@ -1,0 +1,119 @@
+/* ----- ⭐️ Navigation ⭐️ ----- */
+
+.nav {
+    background-color: var(--bg-color-light);
+    width: 100vw;
+    height: 12rem;
+    padding: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo {
+    height: 75%;
+}
+
+.nav__options {
+    display: flex;
+}
+
+/* .nav__user-info {} */
+
+.search-bar {
+    background-color: #a2d2ff;
+    /* max-width: 40rem; */
+    margin: 0 5rem;
+    border-radius: 1rem;
+    flex: 1;
+    display: flex;
+}
+
+.search-bar__dropdown {
+    background-color: #a2d2ff;;
+    color: white;
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    font-weight: 200;
+    width: 10rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.search-bar__dropdown--all {
+    width: 8rem;
+}
+
+.search-bar__dropdown--accessories {
+    width: 15rem;
+}
+
+.search-bar__dropdown--clothing {
+    width: 12rem;
+}
+
+.search-bar__dropdown--electronics {
+    width: 15rem;
+}
+
+.search-bar__input {
+    flex: 1;
+    background-color: var(--color-light);
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    border: .1rem solid var(--color-primary);
+    border-radius: 0;
+}
+
+.search-bar__input::placeholder {
+    font-weight: 100;
+}
+
+.search-bar__input:focus {
+    filter: brightness(95%);
+}
+
+.search-bar__button {
+    min-width: 5rem;
+    height: 5rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.search-bar__button--icon {
+    color: var(--color-light);
+    font-size: 2.4rem;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .nav {
+        height: 12rem;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .search-bar {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .nav {
+        height: 10rem;
+        padding: 0 2rem;
+    }
+
+    .nav__logo {
+        height: auto;
+        width: 55%;
+    }
+
+    .nav__options {
+        display: flex;
+    }
+}

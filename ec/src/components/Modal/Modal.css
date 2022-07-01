@@ -1,0 +1,231 @@
+.modal-background {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    z-index: 100;
+    opacity: .8;
+}
+
+.modal-inner {
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.modal {
+    background-color: white;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 400px;
+    /* height: 500px; */
+    position: relative;
+}
+
+.modal__close-button {
+    background-color: rgb(187, 187, 187);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    min-width: 5rem;
+    height: 5rem;
+    border-radius: 0;
+}
+
+.modal__close-button--icon {
+    color: var(--color-light);
+    font-size: 2.4rem;
+}
+
+.loader-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    padding: 70px 20px 70px 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    grid-gap: 4%;
+    overflow-y: scroll;
+}
+
+.modal-container__left {
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.modal-container__right {
+    /* background-color: orange; */
+}
+
+.modal__image {
+    margin-top: 40px;
+    max-height: 300px;
+    max-width: 90%;
+}
+
+.modal__category {
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.modal__title {
+    color: var(--color-primary);
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding-right: 50px;
+}
+
+.modal__description {
+    color: gray;
+    font-size: 1.8rem;
+    font-weight: 100;
+    line-height: 1.5;
+    padding-right: 50px;
+}
+
+.modal__buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.modal__price {
+    color: var(--color-primary);
+    font-size: 4rem;
+    font-weight: 900;
+}
+
+.modal__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.modal__button--icon {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+.modal__button--text {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.modal__rating-container {
+    /* background-color: red; */
+    height: 20px;
+    margin: 20px 0 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.rating-container__rate {
+    background-color: var(--color-primary);
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+}
+
+.rating-container__star-container {
+    margin-left: 10px;
+    display: flex;
+}
+
+.star-container__star {
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+.rating-container__count {
+    color: darkgray;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) {
+    .modal-inner {
+        padding: 0;
+    }
+
+    .modal {
+        max-width: 100%;
+        min-height: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .modal-container {
+        padding: 10px 50px 50px 50px;
+        grid-template-columns: 1fr;
+    }
+
+    .modal__image {
+        max-height: 240px;
+        max-width: 90%;
+    }
+
+    .modal-container__right {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .modal__category {
+        margin-bottom: 10px;
+        padding: 5px 10px;
+    }
+
+    .modal__title {
+        font-size: 2.4rem;
+        line-height: 1.3;
+        margin-bottom: 10px;
+        padding-right: 0;
+    }
+
+    .modal__description {
+        padding-right: 0;
+    }
+
+    .modal__buttons {
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .modal-container {
+        padding: 10px 30px 50px 30px;
+        grid-template-columns: 1fr;
+    }
+}

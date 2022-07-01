@@ -1,0 +1,70 @@
+/* ----- Variables ----- */
+:root {
+  /* Fonts */
+  --font-primary: 'Ubuntu', sans-serif;
+
+  /* Colours */
+  --color-primary :#cdb4db;
+  --color-light: #fff;
+  --color-dark: #333;
+  --color-yellow: rgb(255, 187, 0);
+
+  --bg-color-light: #fff;
+  --bg-color-dark: #333;
+}
+
+/* Universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 62.5%;
+}
+
+.App {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Buttons */
+
+button:hover {
+  cursor: pointer;
+}
+
+.btn-transparent {
+  background-color: transparent;
+  border: none;
+}
+
+.btn-primary {
+  background-color:#cdb4db;
+  color: var(--color-light);
+  border: none;
+}
+
+.btn-primary:hover {
+  filter: brightness(95%);
+}
+
+.btn-primary i {
+  color: white;
+}
+
+.btn-text-link {
+  background-color: transparent;
+  color:#cdb4db;
+  font-family: var(--font-primary);
+  border: none;
+  text-decoration: underline;
+}
+
+.btn-text-link:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
